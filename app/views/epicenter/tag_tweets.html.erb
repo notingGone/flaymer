@@ -12,7 +12,7 @@
         <li class="list-group-item my-list-item"
         <p class="list-group-item-header">
           <%= tweet.user.name + ' @' + tweet.user.username %>
-          • <%= time_ago_in_words(tweet.created_at) %>
+          <span class="dot">•</span> <%= time_ago_in_words(tweet.created_at) %>
         </p>
         <p class="list-group-item-text">
           <%= tweet.message.html_safe %>

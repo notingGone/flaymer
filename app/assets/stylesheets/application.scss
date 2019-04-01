@@ -24,6 +24,11 @@
   --flaymer-dk-red: darkorange;
 }
 
+.dot {
+  color: purple;
+  // color: var(--charcoal);
+}
+
 body {
   color: var(--flaymer-red);
   background-color: var(--charcoal);
