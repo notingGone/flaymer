@@ -1,0 +1,19 @@
+<div class="cover jumbotron jumbotron-fluid my-jumbo-bg"> <!-- jumbotron -->
+  <div class="my-avatar">
+    <%= image_tag 'fire.svg', class: "img-responsive" %>
+    <%#= image_tag @user.avatar.url, class: "img-responsive" %>
+  </div>
+</div>
+
+<%= render 'navbar' %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 my-sidebar">
+      <%= render 'sidebar' %>
+    </div>
+    <div class="col-sm-8">
+      <%= render 'flaymes_list_group' %>
+    </div>
+  </div>
+</div>

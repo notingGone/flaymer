@@ -1,0 +1,33 @@
+navbar - styling
+
+  fix drop-down styling,
+
+  use "fa fa-fire" icon for New Flayme, use custom ampersand for home
+
+vies/devise/sessions/new view - style (well well-md)
+
+views/devise/registrations/new - style (well well-md)
+
+views/tweets/new - style
+
+feed view
+
+  sidebar
+
+tag_tweets view
+
+  link_to user, username
+
+show_user view
+
+  2nd navbar - make it useful. it's just a layout placeholder right now.
+
+  jumbotron - AddBackgroundToUser, carrierwave uploader, default to ampersand
+
+  avatar - actually display user's avatar (uncomment in show_user view)
+
+  tweets in list-groups
+
+tweets controller
+
+  get_tagged is a helper, should be a service?

@@ -1,0 +1,142 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+:root {
+  --charcoal: #353535;
+  --flaymer-red: #e50712;
+  --flaymer-dk-red: darkorange;
+}
+
+body {
+  color: var(--flaymer-red);
+  background-color: var(--charcoal);
+  margin-top: 50px;
+}
+
+a:visited {
+  color: white;
+}
+
+.navbar-my-dark, .navbar-my-dark a {
+  color: var(--flaymer-red);
+  background-color: black;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.my-search {
+  padding: 9px;
+}
+
+.navbar-my-dark li a:hover {
+  background-color: var(--charcoal);
+}
+
+.my-navbar-end-row {
+  margin-right: auto;
+}
+
+.my-jumbo-bg {
+  background-color: var(--flaymer-red);
+  background-image: url("dnd-amp.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 280px;
+  margin-bottom: 0;
+  /*position: absolute;*/
+  margin-top: 53px;
+}
+
+.my-avatar {
+  background: var(--flaymer-red);
+  border: 5px solid #000;
+  border-radius: 100px;
+  padding: 40px;
+  height: 200px;
+  width: 200px;
+  top: 216px;
+  left: 35px;
+  position: absolute;
+  z-index: 1;
+}
+
+.my-avatar img {
+  z-index: 0;
+}
+
+.my-sidebar {
+  margin-top: 35px;
+}
+
+div.well.my-well {
+  background-image: none;
+  background-color: black;
+}
+
+.profile-info {
+  margin-left: 10px;
+}
+
+.my-list {
+  border-radius: none;
+  margin-top: 15px;
+}
+
+.my-list-item {
+  color: var(--flaymer-red);
+  background-color: black;
+}
+
+.my-list-item:hover, .my-list-item:focus {
+  bakground-color: var(--charcoal);
+}
+
+ h4.my-heading {
+  color: var(--flaymer-red);
+  font-weight: bolder;
+  display: inline;
+}
+
+.list-group-item-text {
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+
+img {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+span.my-amp-tag {
+  color: darkorange;
+}
+/*.infinity {
+  text-size: 2m;
+}*/
+
+/*.my-btn-red {
+  color: black;
+  background-image: none;
+  background-color: var(--flaymer-red);
+}*/
+
+/*.my-btn-red:hover {
+  background-color: var(--charcoal);
+}*/
