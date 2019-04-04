@@ -2,12 +2,20 @@
   <div class="container-fluid">
       <ul class="nav navbar-nav navbar-right my-navbar-end-row">
         <li><a href="">Flames <span class="badge">144K</span></a></li>
-        <li><a href="">Masters <span class="badge">0</span></a></li>
-        <li><a href="">Minions <span class="badge infinity">&infin;</span></a></li>
+        <li>
+          <%= link_to following_path(id: @user.id) do %>
+            Masters <span class="badge"><%= @user.following.size %></span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to followers_path(id: @user.id) do %>
+            Minions <span class="badge infinity">&infin;</span>
+          <% end %>
+        </li>
         <li><a href="">Stokes <span class="badge">600</span></a></li>
         <li><a href="">Codex <span class="badge">3 Score</span></a></li>
         <% if current_user.following.include?(@user.id) %>
-          <%= link_to "Unfollow", unfollow_path(id: @user.id), class: "btn btn-danger" %>
+          <%= link_to "Following", unfollow_path(id: @user.id), class: "btn btn-primary", id: "unfollow-btn" %>
         <% else %>
           <% if current_user.id != @user.id %>
             <%= link_to "Follow", now_following_path(id: @user.id), class: "btn btn-primary" %>

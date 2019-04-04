@@ -1,0 +1,10 @@
+<h1>All Users</h1>
+
+<ul class="list-group my-group">
+  <% @users.each do |user| %>
+    <li class="list-group-item my-list-item">
+      <p class="list-group-item-heading">
+      </p>
+    </li>
+  <% end %>
+</ul>

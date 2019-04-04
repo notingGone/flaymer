@@ -1,6 +1,8 @@
 <a>
   fix colors
 
+fix heroku repo
+
 tweets#show
 
   links need to be up-to-date
@@ -12,6 +14,14 @@ navbar - styling
   fix drop-down styling,
 
   use "fa fa-fire" icon for New Flayme, use custom ampersand for home
+
+2nd navbar
+
+  implement badges
+
+  implement other buttons
+
+  responsiveness == bleh!
 
 vies/devise/sessions/new view - style (well well-md)
 

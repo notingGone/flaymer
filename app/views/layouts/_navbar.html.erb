@@ -4,17 +4,19 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
+          <span>Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <%= link_to "<i class='fa fa-fire'> Home</i>".html_safe, root_path, class: "navbar-brand" %>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><%= link_to "<i class='fa fa-scroll'> New Flayme</i>".html_safe, new_tweet_path, class: "navbar-brand" %></li>
+          <li><%= link_to "All Users", all_users_path %>
+          <li class="nav nav-link"><%= link_to "Home", root_path, class: "navbar-brand" %></li>
+          <li class="nav nav-link"><%= link_to "followers:", followers_path(id: current_user.id) %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>
