@@ -20,8 +20,6 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'paperclip'
 gem 'font-awesome-rails'
 
-
-
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -38,6 +36,10 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
+end
+
+group :production do
+  gem 'pg', '0.20.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
