@@ -7,29 +7,29 @@
         <div class="well user-list-wells my-well">
           <div class="row">
             <div class="col-md-6">
-              <% if !@user.avatar.url.nil? %>
-                <%= image_tag @user.avatar.url, class: "image-responsive all-users-avatar" %>
+              <% if !user.avatar.url.nil? %>
+                <%= image_tag user.avatar.url, class: "image-responsive all-users-avatar" %>
               <% end %>
             </div>
             <div class="col-md-6">
               <p>
-                <% if current_user.following.include?(@user.id) %>
-                  <%= link_to "Following", unfollow_path(id: @user.id), class: "btn btn-primary", id: "unfollow-btn" %>
+                <% if current_user.following.include?(user.id) %>
+                  <%= link_to "Following", unfollow_path(id: user.id), class: "btn btn-primary", id: "unfollow-btn" %>
                 <% else %>
-                  <% if current_user.id != @user.id %>
-                    <%= link_to "Follow", now_following_path(id: @user.id), class: "btn btn-primary" %>
+                  <% if current_user.id != user.id %>
+                    <%= link_to "Follow", now_following_path(id: user.id), class: "btn btn-primary" %>
                   <% end %>
                 <% end %>
               </p>
             </div>
           </div>
           <div class="row">
-            <%= link_to show_user_path(id: @user.id) do %>
-              <h3><%= @user.name %></h3>
-              <p>@<%= @user.username %></p>
+            <%= link_to show_user_path(id: user.id) do %>
+              <h3><%= user.name %></h3>
+              <p>@<%= user.username %></p>
             <% end %>
             <p>
-              <%= @user.bio %>
+              <%= user.bio %>
             </p>
           </div>
         </div>
